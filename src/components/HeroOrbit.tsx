@@ -1,4 +1,4 @@
-import { PropsWithChildren } from 'react';
+import { PropsWithChildren } from "react";
 
 const HeroOrbit = ({
   children,
