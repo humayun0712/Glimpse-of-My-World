@@ -1,6 +1,7 @@
 import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg';
 import CheckCircleIcon from '@/assets/icons/check-circle.svg';
 import AnimeVaultImage from '@/assets/images/anime_vault.png';
+import ChatAppImage from '@/assets/images/chat_app.png';
 import MovieStreamingApp from '@/assets/images/MovieStreaming.png';
 import SushiManImage from '@/assets/images/sushi_man.png';
 
@@ -12,7 +13,7 @@ import Image from 'next/image';
 const portfolioProjects = [
   {
     company: 'Coding Mission',
-    year: '2022',
+    year: '2023',
     title: 'Modern Sushi Website',
     results: [
       { title: 'Best User Experience on All Devices' },
@@ -45,6 +46,18 @@ const portfolioProjects = [
     ],
     link: 'https://animevault-jsm.netlify.app/',
     image: MovieStreamingApp,
+  },
+  {
+    company: 'Navodita Infotech',
+    year: '2024',
+    title: 'Backend Node.js Chatting App',
+    results: [
+      { title: 'Added Rooms for private and Conversations' },
+      { title: 'Utilized Socket.io for Real-Time Chatting' },
+      { title: 'Completely Documented Internship Project' },
+    ],
+    link: '',
+    image: ChatAppImage,
   },
 ];
 
