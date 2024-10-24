@@ -18,7 +18,6 @@ export const HeroSection = () => {
             backgroundImage: `url(${grainImage.src})`,
           }}
         ></div>
-
         {/* Ringa Ringa Rings */}
         <div className="size-[620px] hero-ring"></div>
         <div className="size-[830px] hero-ring"></div>

@@ -2,7 +2,7 @@ import grainImage from '@/assets/images/grain.jpg';
 import { PropsWithChildren } from 'react';
 import { twMerge } from 'tailwind-merge';
 
-type CardProps = PropsWithChildren<{ className: string }>;
+type CardProps = PropsWithChildren<{ className?: string }>;
 
 const Card = ({ children, className }: CardProps) => {
   return (
