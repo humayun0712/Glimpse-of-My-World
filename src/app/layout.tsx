@@ -21,8 +21,8 @@ export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
   maximumScale: 1,
+  minimumScale: 1,
   userScalable: false,
-  interactiveWidget: 'resizes-visual',
 };
 
 export default function RootLayout({
