@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { twMerge } from 'tailwind-merge';
 
+import { Header } from '@/sections/Header';
 import { Calistoga, Inter } from 'next/font/google';
 import './globals.css';
 
@@ -33,6 +34,7 @@ export default function RootLayout({
           'bg-gray-900 text-white antialiased font-sans no-scrollbar overflow-y-auto'
         )}
       >
+        <Header />
         {children}
       </body>
     </html>
