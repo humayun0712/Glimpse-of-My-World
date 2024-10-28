@@ -5,7 +5,7 @@ import { Calistoga, Inter } from 'next/font/google';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'My Personal Portfolio',
+  title: "Lohit's Portfolio",
   description:
     'Created with the help of Frontend Tribe, King Grey"s personal portfolio.Android, Web and Blockchain Developer',
 };
@@ -24,6 +24,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <meta charSet="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <body
         className={twMerge(
           inter.variable,
