@@ -1,7 +1,6 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { twMerge } from 'tailwind-merge';
 
-import { Header } from '@/sections/Header';
 import { Calistoga, Inter } from 'next/font/google';
 import './globals.css';
 
@@ -17,6 +16,14 @@ const calistoga = Calistoga({
   variable: '--font-serif',
   weight: ['400'],
 });
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+  interactiveWidget: 'resizes-visual',
+};
 
 export default function RootLayout({
   children,
@@ -34,7 +41,6 @@ export default function RootLayout({
           'bg-gray-900 text-white antialiased font-sans no-scrollbar overflow-y-auto'
         )}
       >
-        <Header />
         {children}
       </body>
     </html>
