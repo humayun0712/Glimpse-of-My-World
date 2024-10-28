@@ -4,19 +4,19 @@ import Link from 'next/link';
 const footerLinks = [
   {
     title: 'Youtube',
-    href: '',
+    href: 'https://www.youtube.com/@kinggrey2511',
   },
   {
-    title: 'Twitter',
-    href: '',
+    title: 'Github',
+    href: 'https://github.com/Emperor-Grey',
   },
   {
     title: 'Instagram',
-    href: '',
+    href: 'https://www.instagram.com/kinggrey7/',
   },
   {
     title: 'LinkedIn',
-    href: '',
+    href: 'https://www.linkedin.com/in/dinavahi-lohit-sai-192a382b1/',
   },
 ];
 

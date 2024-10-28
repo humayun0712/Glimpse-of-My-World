@@ -10,34 +10,40 @@ import React from 'react';
 
 const testimonials = [
   {
-    name: 'Alex Turner',
-    position: 'Marketing Manager @ TechStartups',
-    text: "Alex was instrumental in transforming our website into a powerful marketing tool. His attention to detail and ability to understand our brand is exceptional. We're thrilled with the results!",
+    name: 'Ch. Murali Krishna',
+    position: 'HOD, NRI Institute of Technology',
+    text: 'Lohit consistently demonstrates a strong grasp of web and mobile development. His dedication to learning and applying new technologies is impressive.',
     avatar: memojiAvatar1,
   },
   {
-    name: 'Olivia Green',
-    position: 'Head of Design @ GreenLeaf',
-    text: 'Working with Alex was a pleasure. His expertise in frontend development brought our designs to life in a way we never imagined. The website has exceeded our expectations.',
+    name: 'Dr. G. Adi Lakshmi',
+    position: 'Professor, NRI Institute of Technology',
+    text: 'Lohit has a unique ability to simplify complex concepts. His Python tutoring sessions have greatly benefited his peers.',
     avatar: memojiAvatar2,
   },
   {
-    name: 'Daniel White',
-    position: 'CEO @ InnovateCo',
-    text: "Alex's ability to create seamless user experiences is unmatched. Our website has seen a significant increase in conversions since launching the new design. We couldn't be happier.",
+    name: 'Karri Sripathi Rao',
+    position: 'Classmate',
+    text: 'Working with Lohit on our group projects was a game changer. His coding skills and creativity brought our ideas to life.',
     avatar: memojiAvatar3,
   },
   {
-    name: 'Emily Carter',
-    position: 'Product Manager @ GlobalTech',
-    text: "Alex is a true frontend wizard. He took our complex product and transformed it into an intuitive and engaging user interface. We're already seeing positive feedback from our customers.",
+    name: 'Bethala Revanth',
+    position: 'Fellow Developer',
+    text: 'Lohit is a talented developer. His work on our mobile app showcased his skill in delivering user-friendly designs.',
     avatar: memojiAvatar4,
   },
   {
-    name: 'Michael Brown',
-    position: 'Director of IT @ MegaCorp',
-    text: "Alex's work on our website has been nothing short of exceptional. He's a talented developer who is also a great communicator. We highly recommend him.",
+    name: 'Ayyala Hari',
+    position: 'Project Partner',
+    text: "Lohit's support and knowledge made our project successful. He is always willing to help and share his expertise.",
     avatar: memojiAvatar5,
+  },
+  {
+    name: 'Amrutha',
+    position: 'Professor, NRI Institute of Technology',
+    text: "Lohit's enthusiasm for coding is infectious. His projects showcase his ability to blend creativity with technical skills.",
+    avatar: memojiAvatar2,
   },
 ];
 

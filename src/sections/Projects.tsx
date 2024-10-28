@@ -14,23 +14,23 @@ const portfolioProjects = [
   {
     company: 'Coding Mission',
     year: '2023',
-    title: 'Modern Sushi Website',
+    title: 'Sushi Website',
     results: [
-      { title: 'Best User Experience on All Devices' },
-      { title: 'Amazing animation using AOS' },
-      { title: 'Responsive Design, Works on All Devices' },
+      { title: 'Optimized for all devices' },
+      { title: 'Stunning animations with AOS' },
+      { title: 'Fully responsive design' },
     ],
-    link: 'https://www.sushiman-jsm.netlify.app',
+    link: 'https://sushiman-jsm.netlify.app/',
     image: SushiManImage,
   },
   {
     company: 'Personal Project',
     year: '2023',
-    title: 'Anime Landing Page for Weebs',
+    title: 'Anime Landing Page',
     results: [
-      { title: 'Used Next.js Server Side Rendering' },
-      { title: 'Improved Performance by 20%' },
-      { title: 'Unlimited Pagination' },
+      { title: 'Server-side rendering with Next.js' },
+      { title: 'Performance boost of 20%' },
+      { title: 'Dynamic pagination features' },
     ],
     link: 'https://animevault-jsm.netlify.app/',
     image: AnimeVaultImage,
@@ -38,32 +38,32 @@ const portfolioProjects = [
   {
     company: 'Dream Project',
     year: 'Upcoming',
-    title: 'Movies Streaming Application',
+    title: 'Movie Streaming App',
     results: [
-      { title: 'Utilized Native Android Frameworks' },
-      { title: 'Clean Architecture' },
-      { title: 'Complete Streaming Capabilities' },
+      { title: 'Built with native Android frameworks' },
+      { title: 'Adopted clean architecture principles' },
+      { title: 'Supports complete streaming features' },
     ],
-    link: 'https://animevault-jsm.netlify.app/',
+    link: 'https://github.com/Emperor-Grey/Portfolio/blob/master/src/assets/video/vid.mp4/',
     image: MovieStreamingApp,
   },
   {
     company: 'Navodita Infotech',
     year: '2024',
-    title: 'Backend Node.js Chatting App',
+    title: 'Node.js Chat App',
     results: [
-      { title: 'Added Rooms for private and Conversations' },
-      { title: 'Utilized Socket.io for Real-Time Chatting' },
-      { title: 'Completely Documented Internship Project' },
+      { title: 'Private rooms for chats' },
+      { title: 'Real-time communication with Socket.io' },
+      { title: 'Thoroughly documented project' },
     ],
-    link: '',
+    link: 'https://backend-node-js-chat-app.vercel.app/',
     image: ChatAppImage,
   },
 ];
 
 export const ProjectsSection = () => {
   return (
-    <section className="pb-16 lg:py-24">
+    <section id="project" className="pb-16 lg:py-24">
       <div className="container">
         <SectionHeader
           eyebrow="Real-World Results"

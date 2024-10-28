@@ -5,8 +5,9 @@ import { Calistoga, Inter } from 'next/font/google';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'My Portfolio',
-  description: 'Created with the help of Frontend Tribe',
+  title: 'My Personal Portfolio',
+  description:
+    'Created with the help of Frontend Tribe, King Grey"s personal portfolio.Android, Web and Blockchain Developer',
 };
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
