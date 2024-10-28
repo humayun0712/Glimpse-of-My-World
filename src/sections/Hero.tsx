@@ -24,54 +24,103 @@ export const HeroSection = () => {
         <div className="size-[1020px] hero-ring"></div>
         <div className="size-[1220px] hero-ring"></div>
 
-        {/* Stars orbiting my hero section */}
-        <HeroOrbit size={800} rotation={-72}>
-          <StarIcon className="size-48 text-emerald-300" />
-        </HeroOrbit>
-
-        {/* Stars orbiting my hero section */}
-        <HeroOrbit size={550} rotation={20}>
-          <StarIcon className="size-12 text-emerald-300" />
-        </HeroOrbit>
-
-        {/* Stars orbiting my hero section */}
-        <HeroOrbit size={590} rotation={98}>
-          <StarIcon className="size-8 text-emerald-300" />
-        </HeroOrbit>
-
         {/* Sparkle */}
-        <HeroOrbit size={430} rotation={-14}>
+        <HeroOrbit
+          size={430}
+          rotation={-14}
+          shouldOrbit
+          orbitDuration="30s"
+          shouldSpin
+          spinDuration="3s"
+        >
           <SparkleIcon className="size-8 text-emerald-300/20" />
         </HeroOrbit>
 
         {/* Sparkle */}
-        <HeroOrbit size={440} rotation={79}>
+        <HeroOrbit
+          size={440}
+          rotation={79}
+          shouldOrbit
+          orbitDuration="32s"
+          shouldSpin
+          spinDuration="3s"
+        >
           <SparkleIcon className="size-5 text-emerald-300/20" />
         </HeroOrbit>
 
-        {/* Sparkle */}
-        <HeroOrbit size={530} rotation={178}>
-          <SparkleIcon className="size-10 text-emerald-300/20" />
+        {/* Circle */}
+        <HeroOrbit size={520} rotation={-41} shouldOrbit orbitDuration="34s">
+          <div className="size-3 bg-emerald-300/20 rounded-full"></div>
         </HeroOrbit>
 
         {/* Sparkle */}
-        <HeroOrbit size={710} rotation={144}>
+        <HeroOrbit
+          size={530}
+          rotation={178}
+          shouldOrbit
+          orbitDuration="36s"
+          shouldSpin
+          spinDuration="3s"
+        >
+          <SparkleIcon className="size-10 text-emerald-300/20" />
+        </HeroOrbit>
+
+        {/* Stars orbiting my hero section */}
+        <HeroOrbit
+          size={550}
+          rotation={20}
+          shouldOrbit
+          orbitDuration="38s"
+          shouldSpin
+          spinDuration="6s"
+        >
+          <StarIcon className="size-12 text-emerald-300" />
+        </HeroOrbit>
+
+        {/* Stars orbiting my hero section */}
+        <HeroOrbit
+          size={590}
+          rotation={98}
+          shouldOrbit
+          orbitDuration="40s"
+          shouldSpin
+          spinDuration="6s"
+        >
+          <StarIcon className="size-8 text-emerald-300" />
+        </HeroOrbit>
+
+        {/* Circle */}
+        <HeroOrbit size={650} rotation={-5} shouldOrbit orbitDuration="42s">
+          <div className="size-3 bg-emerald-300/20 rounded-full"></div>
+        </HeroOrbit>
+
+        {/* Sparkle */}
+        <HeroOrbit
+          size={710}
+          rotation={144}
+          shouldOrbit
+          orbitDuration="44s"
+          shouldSpin
+          spinDuration="3s"
+        >
           <SparkleIcon className="size-14 text-emerald-300/20" />
         </HeroOrbit>
 
         {/* Circle */}
-        <HeroOrbit size={720} rotation={85}>
+        <HeroOrbit size={720} rotation={85} shouldOrbit orbitDuration="46s">
           <div className="size-3 bg-emerald-300/20 rounded-full"></div>
         </HeroOrbit>
 
-        {/* Circle */}
-        <HeroOrbit size={520} rotation={-41}>
-          <div className="size-3 bg-emerald-300/20 rounded-full"></div>
-        </HeroOrbit>
-
-        {/* Circle */}
-        <HeroOrbit size={650} rotation={-5}>
-          <div className="size-3 bg-emerald-300/20 rounded-full"></div>
+        {/* Stars orbiting my hero section */}
+        <HeroOrbit
+          size={800}
+          rotation={-72}
+          shouldOrbit
+          orbitDuration="48s"
+          shouldSpin
+          spinDuration="6s"
+        >
+          <StarIcon className="size-48 text-emerald-300" />
         </HeroOrbit>
       </div>
 
@@ -85,7 +134,10 @@ export const HeroSection = () => {
           />
           <div className="bg-gray-950 border border-gray-800 py-1.5 px-4 inline-flex items-center gap-4 rounded-lg">
             {/* FOR DOT, AVAILABILITY DOT */}
-            <div className="bg-green-500 size-2.5 rounded-full"></div>
+            <div className="bg-green-500 size-2.5 rounded-full relative">
+              {/* Animation Ping Thingy Needed */}
+              <div className="bg-green-500 absolute inset-0 rounded-full animate-ping-large"></div>
+            </div>
             <div className="text-sm font-medium">Available for new project</div>
           </div>
         </div>
