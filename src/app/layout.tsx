@@ -1,8 +1,8 @@
-import type { Metadata, Viewport } from 'next';
-import { twMerge } from 'tailwind-merge';
+import type { Metadata, Viewport } from "next";
+import { twMerge } from "tailwind-merge";
 
-import { Calistoga, Inter } from 'next/font/google';
-import './globals.css';
+import { Calistoga, Inter } from "next/font/google";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Lohit's Portfolio",
@@ -10,20 +10,20 @@ export const metadata: Metadata = {
     'Created with the help of Frontend Tribe, King Grey"s personal portfolio.Android, Web and Blockchain Developer',
 };
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
+const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 const calistoga = Calistoga({
-  subsets: ['latin'],
-  variable: '--font-serif',
-  weight: ['400'],
+  subsets: ["latin"],
+  variable: "--font-serif",
+  weight: ["400"],
 });
 
 export const viewport: Viewport = {
-  width: 'device-width',
+  width: "device-width",
   initialScale: 1,
   maximumScale: 1,
-  viewportFit: 'contain',
+  viewportFit: "contain",
   userScalable: false,
-  height: 'device-height',
+  height: "device-height",
 };
 
 export default function RootLayout({
@@ -39,7 +39,7 @@ export default function RootLayout({
         className={twMerge(
           inter.variable,
           calistoga.variable,
-          'bg-gray-900 text-white antialiased font-sans no-scrollbar overflow-y-auto overflow-x-hidden'
+          "no-scrollbar overflow-y-auto overflow-x-hidden bg-gray-900 font-sans text-white antialiased",
         )}
       >
         {children}
