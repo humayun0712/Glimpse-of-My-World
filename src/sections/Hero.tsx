@@ -142,7 +142,7 @@ export const HeroSection = () => {
 
       <div className="container">
         {/* Container for the Image */}
-        <div className="group relative mx-auto flex w-fit flex-col items-center justify-center border border-red-500">
+        <div className="group relative mx-auto flex w-fit flex-col items-center justify-center">
           {/* Image with hover behavior */}
           <Image
             onClick={handleResumeDownload}
