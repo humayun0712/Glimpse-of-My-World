@@ -142,11 +142,11 @@ export const HeroSection = () => {
 
       <div className="container">
         {/* Container for the Image */}
-        <div className="relative group justify-center flex flex-col items-center border border-red-500 w-fit mx-auto">
+        <div className="group relative mx-auto flex w-fit flex-col items-center justify-center border border-red-500">
           {/* Image with hover behavior */}
           <Image
             onClick={handleResumeDownload}
-            className="size-24 hover:cursor-pointer group"
+            className="group size-24 hover:cursor-pointer"
             src={memojiImage}
             alt="Person Looking at the laptop"
           />
