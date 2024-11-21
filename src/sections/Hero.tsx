@@ -142,19 +142,19 @@ export const HeroSection = () => {
 
       <div className="container">
         {/* Container for the Image */}
-        <div className="group relative flex flex-col items-center">
+        <div className="relative group justify-center flex flex-col items-center border border-red-500 w-fit mx-auto">
+          {/* Image with hover behavior */}
+          <Image
+            onClick={handleResumeDownload}
+            className="size-24 hover:cursor-pointer group"
+            src={memojiImage}
+            alt="Person Looking at the laptop"
+          />
+
           {/* Tooltip */}
           <span className="absolute top-2 ml-12 hidden translate-x-1/2 transform rounded-3xl rounded-bl-none bg-black px-2 py-1 text-xs font-medium text-white group-hover:block">
             Download Resume
           </span>
-
-          {/* Image with hover behavior */}
-          <Image
-            onClick={handleResumeDownload}
-            className="size-24 hover:cursor-pointer"
-            src={memojiImage}
-            alt="Person Looking at the laptop"
-          />
 
           {/* Availability Section */}
           <div className="inline-flex items-center gap-4 rounded-lg border border-gray-800 bg-gray-950 px-4 py-1.5">
