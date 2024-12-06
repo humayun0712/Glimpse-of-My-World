@@ -7,7 +7,7 @@ import HTMLIcon from "@/assets/icons/html5.svg";
 import JavaIcon from "@/assets/icons/java.svg";
 import NodeJsIcon from "@/assets/icons/node.svg";
 import ReactIcon from "@/assets/icons/react.svg";
-import RustIcon from '@/assets/icons/rust.svg';
+import RustIcon from "@/assets/icons/rust.svg";
 import SQLIcon from "@/assets/icons/sql.svg";
 import JavaScriptIcon from "@/assets/icons/square-js.svg";
 import SmileEmoji from "@/assets/images/memoji-smile.png";
@@ -30,7 +30,7 @@ const toolboxItems = [
     iconType: JavaScriptIcon,
   },
   {
-    title: 'Rust',
+    title: "Rust",
     iconType: RustIcon,
   },
   {
