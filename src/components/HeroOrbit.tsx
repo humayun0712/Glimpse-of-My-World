@@ -1,5 +1,5 @@
-import { PropsWithChildren } from 'react';
-import { twMerge } from 'tailwind-merge';
+import { PropsWithChildren } from "react";
+import { twMerge } from "tailwind-merge";
 
 type HeroOrbitProps = PropsWithChildren<{
   size: number;
@@ -22,7 +22,7 @@ const HeroOrbit = ({
   return (
     <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
       <div
-        className={twMerge(shouldOrbit === true && 'animate-spin')}
+        className={twMerge(shouldOrbit === true && "animate-spin")}
         style={{
           animationDuration: orbitDuration,
         }}
@@ -36,7 +36,7 @@ const HeroOrbit = ({
           }}
         >
           <div
-            className={twMerge(shouldSpin === true && 'animate-spin')}
+            className={twMerge(shouldSpin === true && "animate-spin")}
             style={{
               animationDuration: spinDuration,
             }}

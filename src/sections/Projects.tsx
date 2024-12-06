@@ -1,62 +1,62 @@
-import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg';
-import CheckCircleIcon from '@/assets/icons/check-circle.svg';
-import AnimeVaultImage from '@/assets/images/anime_vault.png';
-import ChatAppImage from '@/assets/images/chat_app.png';
-import MovieStreamingApp from '@/assets/images/MovieStreaming.png';
-import SushiManImage from '@/assets/images/sushi_man.png';
+import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
+import CheckCircleIcon from "@/assets/icons/check-circle.svg";
+import AnimeVaultImage from "@/assets/images/anime_vault.png";
+import ChatAppImage from "@/assets/images/chat_app.png";
+import MovieStreamingApp from "@/assets/images/MovieStreaming.png";
+import SushiManImage from "@/assets/images/sushi_man.png";
 
-import Card from '@/components/Card';
-import SectionHeader from '@/components/SectionHeader';
+import Card from "@/components/Card";
+import SectionHeader from "@/components/SectionHeader";
 
-import Image from 'next/image';
+import Image from "next/image";
 
 const portfolioProjects = [
   {
-    company: 'Coding Mission',
-    year: '2023',
-    title: 'Sushi Website',
+    company: "Coding Mission",
+    year: "2023",
+    title: "Sushi Website",
     results: [
-      { title: 'Optimized for all devices' },
-      { title: 'Stunning animations with AOS' },
-      { title: 'Fully responsive design' },
+      { title: "Optimized for all devices" },
+      { title: "Stunning animations with AOS" },
+      { title: "Fully responsive design" },
     ],
-    link: 'https://sushiman-jsm.netlify.app/',
+    link: "https://sushiman-jsm.netlify.app/",
     image: SushiManImage,
   },
   {
-    company: 'Personal Project',
-    year: '2023',
-    title: 'Anime Landing Page',
+    company: "Personal Project",
+    year: "2023",
+    title: "Anime Landing Page",
     results: [
-      { title: 'Server-side rendering with Next.js' },
-      { title: 'Performance boost of 20%' },
-      { title: 'Dynamic pagination features' },
+      { title: "Server-side rendering with Next.js" },
+      { title: "Performance boost of 20%" },
+      { title: "Dynamic pagination features" },
     ],
-    link: 'https://animevault-jsm.netlify.app/',
+    link: "https://animevault-jsm.netlify.app/",
     image: AnimeVaultImage,
   },
   {
-    company: 'Dream Project',
-    year: 'Upcoming',
-    title: 'Movie Streaming App',
+    company: "Dream Project",
+    year: "Upcoming",
+    title: "Movie Streaming App",
     results: [
-      { title: 'Built with native Android frameworks' },
-      { title: 'Adopted clean architecture principles' },
-      { title: 'Supports complete streaming features' },
+      { title: "Built with native Android frameworks" },
+      { title: "Adopted clean architecture principles" },
+      { title: "Supports complete streaming features" },
     ],
-    link: 'https://github.com/Emperor-Grey/Portfolio/blob/master/src/assets/video/vid.mp4/',
+    link: "https://github.com/Emperor-Grey/Portfolio/blob/master/src/assets/video/vid.mp4/",
     image: MovieStreamingApp,
   },
   {
-    company: 'Navodita Infotech',
-    year: '2024',
-    title: 'Node.js Chat App',
+    company: "Navodita Infotech",
+    year: "2024",
+    title: "Node.js Chat App",
     results: [
-      { title: 'Private rooms for chats' },
-      { title: 'Real-time communication with Socket.io' },
-      { title: 'Thoroughly documented project' },
+      { title: "Private rooms for chats" },
+      { title: "Real-time communication with Socket.io" },
+      { title: "Thoroughly documented project" },
     ],
-    link: 'https://backend-node-js-chat-app.vercel.app/',
+    link: "https://backend-node-js-chat-app.vercel.app/",
     image: ChatAppImage,
   },
 ];
@@ -70,27 +70,27 @@ export const ProjectsSection = () => {
           title="Featured Projects"
           description="See how I transformed concepts into engaging digital experiences."
         />
-        <div className="flex flex-col mt-10 gap-20 md:mt-20">
+        <div className="mt-10 flex flex-col gap-20 md:mt-20">
           {portfolioProjects.map((project, i) => (
             <Card
               key={project.title}
-              className="px-8 pt-8 pb-0 md:pt-12 md:px-10 lg:pt-16 lg:px-20 sticky"
+              className="sticky px-8 pb-0 pt-8 md:px-10 md:pt-12 lg:px-20 lg:pt-16"
               style={{
                 top: `calc(64px + ${i * 40}px)`,
               }}
             >
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                 <div className="lg:pb-16">
-                  <div className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex font-bold uppercase tracking-widest text-sm gap-2 bg-clip-text text-transparent">
+                  <div className="inline-flex gap-2 bg-gradient-to-r from-emerald-300 to-sky-400 bg-clip-text text-sm font-bold uppercase tracking-widest text-transparent">
                     <span>{project.company}</span>
                     <span>&bull;</span>
                     <span>{project.year}</span>
                   </div>
-                  <h3 className="font-serif text-2xl mt-2 md:text-4xl md:mt-5">
+                  <h3 className="mt-2 font-serif text-2xl md:mt-5 md:text-4xl">
                     {project.title}
                   </h3>
-                  <hr className="border-t-2 border-white/5 mt-4" />
-                  <ul className="flex flex-col gap-4 mt-4 md:mt-5">
+                  <hr className="mt-4 border-t-2 border-white/5" />
+                  <ul className="mt-4 flex flex-col gap-4 md:mt-5">
                     {project.results.map((results) => (
                       <li
                         key={results.title}
@@ -102,7 +102,7 @@ export const ProjectsSection = () => {
                     ))}
                   </ul>
                   <a href={project.link}>
-                    <button className="bg-white text-gray-950 h-12 w-full rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 md:w-auto md:px-6">
+                    <button className="mt-8 inline-flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-white font-semibold text-gray-950 md:w-auto md:px-6">
                       <span>Visit Live Site</span>
                       <ArrowUpRightIcon className="size-4" />
                     </button>
@@ -110,7 +110,7 @@ export const ProjectsSection = () => {
                 </div>
                 <div className="relative">
                   <Image
-                    className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none"
+                    className="-mb-4 mt-8 md:-mb-0 lg:absolute lg:mt-0 lg:h-full lg:w-auto lg:max-w-none"
                     src={project.image}
                     alt={project.title}
                   />

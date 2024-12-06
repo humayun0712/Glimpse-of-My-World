@@ -1,27 +1,33 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
+import Image from "next/image";
 
-import ArrowDown from '@/assets/icons/arrow-down.svg';
-import SparkleIcon from '@/assets/icons/sparkle.svg';
-import StarIcon from '@/assets/icons/star.svg';
-import grainImage from '@/assets/images/grain.jpg';
-import memojiImage from '@/assets/images/memoji-computer.png';
-
-import HeroOrbit from '@/components/HeroOrbit';
+import ArrowDown from "@/assets/icons/arrow-down.svg";
+import SparkleIcon from "@/assets/icons/sparkle.svg";
+import StarIcon from "@/assets/icons/star.svg";
+import grainImage from "@/assets/images/grain.jpg";
+import memojiImage from "@/assets/images/memoji-computer.png";
+import HeroOrbit from "@/components/HeroOrbit";
 
 export const HeroSection = () => {
   const handleConnect = () => {
     window.location.href =
-      'mailto:lohitsaidev@gmail.com?subject=Contact Request';
+      "mailto:lohitsaidev@gmail.com?subject=Contact Request";
   };
   const handleMyWork = () => {
-    window.location.href = '#project';
+    window.location.href = "#project";
+  };
+
+  const handleResumeDownload = () => {
+    const link = document.createElement("a");
+    link.href = "./pdf/my_resume.pdf";
+    link.download = "Lohit's_Resume.pdf";
+    link.click();
   };
 
   return (
-    <section id="home" className="py-32 md:py-48 lg:py-60 relative z-0">
-      <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)] -z-30">
+    <section id="home" className="relative z-0 py-32 md:py-48 lg:py-60">
+      <div className="absolute inset-0 -z-30 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
         <div
           className="absolute inset-0 opacity-5"
           style={{
@@ -29,10 +35,10 @@ export const HeroSection = () => {
           }}
         ></div>
         {/* Ringa Ringa Rings */}
-        <div className="size-[620px] hero-ring"></div>
-        <div className="size-[830px] hero-ring"></div>
-        <div className="size-[1020px] hero-ring"></div>
-        <div className="size-[1220px] hero-ring"></div>
+        <div className="hero-ring size-[620px]"></div>
+        <div className="hero-ring size-[830px]"></div>
+        <div className="hero-ring size-[1020px]"></div>
+        <div className="hero-ring size-[1220px]"></div>
 
         {/* Sparkle */}
         <HeroOrbit
@@ -60,7 +66,7 @@ export const HeroSection = () => {
 
         {/* Circle */}
         <HeroOrbit size={520} rotation={-41} shouldOrbit orbitDuration="34s">
-          <div className="size-3 bg-emerald-300/20 rounded-full"></div>
+          <div className="size-3 rounded-full bg-emerald-300/20"></div>
         </HeroOrbit>
 
         {/* Sparkle */}
@@ -101,7 +107,7 @@ export const HeroSection = () => {
 
         {/* Circle */}
         <HeroOrbit size={650} rotation={-5} shouldOrbit orbitDuration="42s">
-          <div className="size-3 bg-emerald-300/20 rounded-full"></div>
+          <div className="size-3 rounded-full bg-emerald-300/20"></div>
         </HeroOrbit>
 
         {/* Sparkle */}
@@ -118,7 +124,7 @@ export const HeroSection = () => {
 
         {/* Circle */}
         <HeroOrbit size={720} rotation={85} shouldOrbit orbitDuration="46s">
-          <div className="size-3 bg-emerald-300/20 rounded-full"></div>
+          <div className="size-3 rounded-full bg-emerald-300/20"></div>
         </HeroOrbit>
 
         {/* Stars orbiting my hero section */}
@@ -136,23 +142,33 @@ export const HeroSection = () => {
 
       <div className="container">
         {/* Container for the Image */}
-        <div className="flex flex-col items-center">
+        <div className="group relative mx-auto flex w-fit flex-col items-center justify-center">
+          {/* Image with hover behavior */}
           <Image
-            className="size-[100px]"
+            onClick={handleResumeDownload}
+            className="group size-24 hover:cursor-pointer"
             src={memojiImage}
             alt="Person Looking at the laptop"
           />
-          <div className="bg-gray-950 border border-gray-800 py-1.5 px-4 inline-flex items-center gap-4 rounded-lg">
+
+          {/* Tooltip */}
+          <span className="absolute top-2 ml-12 hidden translate-x-1/2 transform rounded-3xl rounded-bl-none bg-black px-2 py-1 text-xs font-medium text-white group-hover:block">
+            Download Resume
+          </span>
+
+          {/* Availability Section */}
+          <div className="inline-flex items-center gap-4 rounded-lg border border-gray-800 bg-gray-950 px-4 py-1.5">
             {/* FOR DOT, AVAILABILITY DOT */}
-            <div className="bg-green-500 size-2.5 rounded-full relative">
+            <div className="relative size-2.5 rounded-full bg-green-500">
               {/* Animation Ping Thingy Needed */}
-              <div className="bg-green-500 absolute inset-0 rounded-full animate-ping-large"></div>
+              <div className="absolute inset-0 animate-ping-large rounded-full bg-green-500"></div>
             </div>
             <div className="text-sm font-medium">Available for new project</div>
           </div>
         </div>
-        <div className="max-w-lg mx-auto">
-          <h1 className="font-serif text-3xl text-center mt-8 md:text-5xl gap-4">
+
+        <div className="mx-auto max-w-lg">
+          <h1 className="mt-8 gap-4 text-center font-serif text-3xl md:text-5xl">
             Building Exceptional User Experiences
           </h1>
           <p className="mt-4 text-center text-white/60 md:text-lg">
@@ -162,17 +178,17 @@ export const HeroSection = () => {
           </p>
         </div>
         {/* Buttons */}
-        <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
+        <div className="mt-8 flex flex-col items-center justify-center gap-4 md:flex-row">
           <button
             onClick={handleMyWork}
-            className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl"
+            className="inline-flex h-12 items-center gap-2 rounded-xl border border-white/15 px-6"
           >
             <span className="font-semibold">Explore My Work</span>
             <ArrowDown className="size-4" />
           </button>
           <button
             onClick={handleConnect}
-            className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl"
+            className="inline-flex h-12 items-center gap-2 rounded-xl border border-white bg-white px-6 text-gray-900"
           >
             <span>👋</span>
             <span className="font-semibold">Let&apos;s Connect</span>
