@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Vijay Rama Raju - Data Science Portfolio
 
-## Getting Started
+Welcome to my portfolio website! This site showcases my journey in Data Science, Python development, and my passion for creating impactful solutions through data analysis and machine learning.
 
-First, run the development server:
+## 🚀 About Me
 
+- 🎓 B.Tech Data Science student at NRI Institute of Technology
+- 💻 Python Developer with a focus on data analysis and machine learning
+- 🔍 Passionate about AI, ML, and prompt engineering
+- 🌱 Always learning and exploring new technologies
+
+## 🛠️ Tech Stack
+
+- **Frontend:** Next.js, React, TailwindCSS, Framer Motion
+- **Languages:** Python, SQL
+- **Data Science:** Pandas, NumPy, Scikit-learn
+- **Version Control:** Git, GitHub
+
+## 🔧 Local Development
+
+1. Clone the repository:
+```bash
+git clone https://github.com/Vijay-1289/portfolio.git
+cd portfolio
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Start the development server:
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🎨 Features
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Modern, responsive design with cyberpunk aesthetics
+- Dynamic project showcase with GitHub integration
+- Interactive UI elements with smooth animations
+- Dark theme optimized for readability
+- Mobile-first approach
 
-## Learn More
+## 📫 Contact
 
-To learn more about Next.js, take a look at the following resources:
+- LinkedIn: [linkedin.com/in/vijay1289](https://linkedin.com/in/vijay1289)
+- GitHub: [github.com/Vijay-1289](https://github.com/Vijay-1289)
+- Email: vijayraju1289@gmail.com
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📝 License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+This project is open source and available under the MIT License.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Built with ❤️ using Next.js and TailwindCSS

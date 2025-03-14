@@ -1,64 +1,76 @@
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
-import AnimeVaultImage from "@/assets/images/anime_vault.png";
-import ChatAppImage from "@/assets/images/chat_app.png";
-import MovieStreamingApp from "@/assets/images/MovieStreaming.png";
-import SushiManImage from "@/assets/images/sushi_man.png";
-
 import Card from "@/components/Card";
 import SectionHeader from "@/components/SectionHeader";
-
 import Image from "next/image";
+
+import aiInterviewImage from "@/assets/images/AI.png";
+import gamingWebsiteImage from "@/assets/images/Gaming.png";
+import searchEngineImage from "@/assets/images/search engine.png";
+import pingPongImage from "@/assets/images/pingpong.png";
+import ticTacToeImage from "@/assets/images/Tictactoe.png";
 
 const portfolioProjects = [
   {
-    company: "Coding Mission",
-    year: "2023",
-    title: "Sushi Website",
-    results: [
-      { title: "Optimized for all devices" },
-      { title: "Stunning animations with AOS" },
-      { title: "Fully responsive design" },
-    ],
-    link: "https://sushiman-jsm.netlify.app/",
-    image: SushiManImage,
-  },
-  {
-    company: "Personal Project",
-    year: "2023",
-    title: "Anime Landing Page",
-    results: [
-      { title: "Server-side rendering with Next.js" },
-      { title: "Performance boost of 20%" },
-      { title: "Dynamic pagination features" },
-    ],
-    link: "https://animevault-jsm.netlify.app/",
-    image: AnimeVaultImage,
-  },
-  {
-    company: "Dream Project",
-    year: "Upcoming",
-    title: "Movie Streaming App",
-    results: [
-      { title: "Built with native Android frameworks" },
-      { title: "Adopted clean architecture principles" },
-      { title: "Supports complete streaming features" },
-    ],
-    link: "https://github.com/Emperor-Grey/Portfolio/blob/master/src/assets/video/vid.mp4/",
-    image: MovieStreamingApp,
-  },
-  {
-    company: "Navodita Infotech",
+    company: "Game Development",
     year: "2024",
-    title: "Node.js Chat App",
+    title: "Ping-Pong Game",
     results: [
-      { title: "Private rooms for chats" },
-      { title: "Real-time communication with Socket.io" },
-      { title: "Thoroughly documented project" },
+      { title: "Built with Python and Pygame" },
+      { title: "Classic arcade-style gameplay" },
+      { title: "Smooth animations and controls" },
     ],
-    link: "https://backend-node-js-chat-app.vercel.app/",
-    image: ChatAppImage,
+    link: "https://github.com/Vijay-1289/Ping-Pong-Game-using-pygame",
+    image: pingPongImage,
   },
+  {
+    company: "Web Development",
+    year: "2024",
+    title: "Search Engine",
+    results: [
+      { title: "Custom search algorithm implementation" },
+      { title: "Clean and intuitive UI with HTML" },
+      { title: "Fast and efficient search results" },
+    ],
+    link: "https://github.com/Vijay-1289/Search-Engine",
+    image: searchEngineImage,
+  },
+  {
+    company: "Game Development",
+    year: "2024",
+    title: "TIC-TAC-TOE",
+    results: [
+      { title: "Interactive HTML-based game" },
+      { title: "Modern UI/UX design" },
+      { title: "Multiplayer functionality" },
+    ],
+    link: "https://github.com/Vijay-1289/TIC-TAC-TOE",
+    image: ticTacToeImage,
+  },
+  {
+    company: "Web Development",
+    year: "2024",
+    title: "Gaming Website",
+    results: [
+      { title: "JavaScript-powered gaming platform" },
+      { title: "Dynamic content loading" },
+      { title: "Responsive design for all devices" },
+    ],
+    link: "https://github.com/Vijay-1289/Gaming-Website",
+    image: gamingWebsiteImage,
+  },
+  {
+    company: "AI Development",
+    year: "2024",
+    title: "AI Interview Platform",
+    results: [
+      { title: "TypeScript-based interview platform" },
+      { title: "AI-powered interview simulations" },
+      { title: "Real-time feedback system" },
+    ],
+    link: "https://github.com/Vijay-1289/AI-Interview-Website",
+    image: aiInterviewImage,
+  }
 ];
 
 export const ProjectsSection = () => {
@@ -66,9 +78,9 @@ export const ProjectsSection = () => {
     <section id="project" className="pb-16 lg:py-24">
       <div className="container">
         <SectionHeader
-          eyebrow="Real-World Results"
-          title="Featured Projects"
-          description="See how I transformed concepts into engaging digital experiences."
+          eyebrow="Maker's Magic"
+          title="My Latest Projects"
+          description="A collection of my recent work in web development, game development, and AI."
         />
         <div className="mt-10 flex flex-col gap-20 md:mt-20">
           {portfolioProjects.map((project, i) => (
@@ -81,7 +93,7 @@ export const ProjectsSection = () => {
             >
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                 <div className="lg:pb-16">
-                  <div className="inline-flex gap-2 bg-gradient-to-r from-emerald-300 to-sky-400 bg-clip-text text-sm font-bold uppercase tracking-widest text-transparent">
+                  <div className="inline-flex gap-2 bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-sm font-bold uppercase tracking-widest text-transparent">
                     <span>{project.company}</span>
                     <span>&bull;</span>
                     <span>{project.year}</span>
@@ -94,25 +106,27 @@ export const ProjectsSection = () => {
                     {project.results.map((results) => (
                       <li
                         key={results.title}
-                        className="flex gap-2 text-sm text-white/50 md:text-base"
+                        className="flex gap-2 text-sm text-white/60 md:text-base"
                       >
-                        <CheckCircleIcon className="size-5 md:size-6" />
+                        <CheckCircleIcon className="size-5 md:size-6 text-emerald-400" />
                         <span>{results.title}</span>
                       </li>
                     ))}
                   </ul>
-                  <a href={project.link}>
-                    <button className="mt-8 inline-flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-white font-semibold text-gray-950 md:w-auto md:px-6">
-                      <span>Visit Live Site</span>
+                  <a href={project.link} target="_blank" rel="noopener noreferrer">
+                    <button className="mt-8 inline-flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-emerald-400 to-cyan-400 font-semibold text-gray-950 hover:from-emerald-500 hover:to-cyan-500 transition-colors duration-300 md:w-auto md:px-6">
+                      <span>View Project</span>
                       <ArrowUpRightIcon className="size-4" />
                     </button>
                   </a>
                 </div>
                 <div className="relative">
                   <Image
-                    className="-mb-4 mt-8 md:-mb-0 lg:absolute lg:mt-0 lg:h-full lg:w-auto lg:max-w-none"
+                    className="-mb-4 mt-8 rounded-lg shadow-lg md:-mb-0 lg:absolute lg:mt-0 lg:h-full lg:w-auto lg:max-w-none"
                     src={project.image}
                     alt={project.title}
+                    width={600}
+                    height={400}
                   />
                 </div>
               </div>

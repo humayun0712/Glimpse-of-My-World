@@ -1,0 +1,24 @@
+{
+  "name": "A Glimpse Into Vijay's World",
+  "short_name": "Vijay's World",
+  "icons": [
+    {
+      "src": "/memoji-favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/memoji-favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/memoji-apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#059669",
+  "background_color": "#111827",
+  "display": "standalone"
+} 

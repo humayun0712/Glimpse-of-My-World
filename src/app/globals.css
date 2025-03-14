@@ -8,11 +8,37 @@ html {
 
 @layer base {
   .nav-item {
-    @apply rounded-full px-4 py-1.5 text-sm font-semibold text-white/70 transition-all duration-300 ease-in-out hover:bg-white/10 hover:text-white;
+    @apply rounded-full px-4 py-1.5 text-sm font-semibold text-white/70 transition-all duration-300 ease-in-out hover:bg-emerald-500/10 hover:text-emerald-400;
   }
 
   .hero-ring {
-    @apply absolute inset-0 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-emerald-300/5 shadow-[0_0_80px_inset] shadow-emerald-300/5;
+    @apply absolute inset-0 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-emerald-400/5 shadow-[0_0_80px_inset] shadow-emerald-400/5;
+  }
+
+  /* Cyberpunk glowing text effect */
+  .text-glow {
+    @apply bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent;
+    text-shadow: 0 0 10px rgba(5, 150, 105, 0.5);
+  }
+
+  /* Animated border effect */
+  .border-glow {
+    @apply relative overflow-hidden;
+    &::before {
+      content: '';
+      @apply absolute inset-0 rounded-xl border-2 border-emerald-400/30;
+      background: linear-gradient(90deg, transparent, rgba(5, 150, 105, 0.2), transparent);
+      animation: border-shine 2s linear infinite;
+    }
+  }
+
+  @keyframes border-shine {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
   }
 }
 
@@ -31,10 +57,21 @@ html {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
   }
+
+  /* Custom backdrop blur */
+  .backdrop-blur-custom {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
 }
 
 /* Ensure to apply the no-scrollbar class */
 html,
 body {
-  @apply no-scrollbar; /* This will hide the scrollbar */
+  @apply no-scrollbar bg-gradient-to-b from-gray-900 to-gray-950; /* This will hide the scrollbar and add a subtle gradient background */
+}
+
+/* Custom selection color */
+::selection {
+  @apply bg-emerald-500/30 text-white;
 }

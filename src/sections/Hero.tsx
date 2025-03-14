@@ -12,7 +12,7 @@ import HeroOrbit from "@/components/HeroOrbit";
 export const HeroSection = () => {
   const handleConnect = () => {
     window.location.href =
-      "mailto:lohitsaidev@gmail.com?subject=Contact Request";
+      "mailto:vijayraju1289@gmail.com?subject=Contact Request";
   };
   const handleMyWork = () => {
     window.location.href = "#project";
@@ -21,7 +21,7 @@ export const HeroSection = () => {
   const handleResumeDownload = () => {
     const link = document.createElement("a");
     link.href = "./pdf/my_resume.pdf";
-    link.download = "Lohit's_Resume.pdf";
+    link.download = "Vijay_Resume.pdf";
     link.click();
   };
 
@@ -141,57 +141,49 @@ export const HeroSection = () => {
       </div>
 
       <div className="container">
-        {/* Container for the Image */}
         <div className="group relative mx-auto flex w-fit flex-col items-center justify-center">
-          {/* Image with hover behavior */}
           <Image
             onClick={handleResumeDownload}
-            className="group size-24 hover:cursor-pointer"
+            className="group size-24 hover:cursor-pointer hover:scale-110 transition-transform duration-300"
             src={memojiImage}
-            alt="Person Looking at the laptop"
+            alt="Vijay's Avatar"
           />
 
-          {/* Tooltip */}
-          <span className="absolute top-2 ml-12 hidden translate-x-1/2 transform rounded-3xl rounded-bl-none bg-black px-2 py-1 text-xs font-medium text-white group-hover:block">
+          <span className="absolute top-2 ml-12 hidden translate-x-1/2 transform rounded-3xl rounded-bl-none bg-black/80 px-2 py-1 text-xs font-medium text-emerald-400 group-hover:block backdrop-blur-sm border border-emerald-500/20">
             Download Resume
           </span>
 
-          {/* Availability Section */}
-          <div className="inline-flex items-center gap-4 rounded-lg border border-gray-800 bg-gray-950 px-4 py-1.5">
-            {/* FOR DOT, AVAILABILITY DOT */}
-            <div className="relative size-2.5 rounded-full bg-green-500">
-              {/* Animation Ping Thingy Needed */}
-              <div className="absolute inset-0 animate-ping-large rounded-full bg-green-500"></div>
+          <div className="inline-flex items-center gap-4 rounded-lg border border-emerald-800/30 bg-gray-950/80 px-4 py-1.5 backdrop-blur-sm">
+            <div className="relative size-2.5 rounded-full bg-emerald-500">
+              <div className="absolute inset-0 animate-ping-large rounded-full bg-emerald-500"></div>
             </div>
-            <div className="text-sm font-medium">Available for new project</div>
+            <div className="text-sm font-medium text-emerald-400">Open to Data Science Opportunities</div>
           </div>
         </div>
 
-        <div className="mx-auto max-w-lg">
-          <h1 className="mt-8 gap-4 text-center font-serif text-3xl md:text-5xl">
-            Building Exceptional User Experiences
+        <div className="mx-auto max-w-2xl">
+          <h1 className="mt-8 gap-4 text-center font-serif text-4xl md:text-6xl bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent">
+            Hi, I'm Vijay Rama Raju
           </h1>
-          <p className="mt-4 text-center text-white/60 md:text-lg">
-            I specialize in transforming designs into functional,
-            high-performing web applications. Let&apos;s discuss your next
-            project.
+          <p className="mt-4 text-center text-white/80 md:text-lg font-light">
+            Passionate Data Science Enthusiast & Python Developer. Currently pursuing B.Tech in Data Science at NRI Institute of Technology, exploring the realms of AI, ML, and prompt engineering.
           </p>
         </div>
-        {/* Buttons */}
+
         <div className="mt-8 flex flex-col items-center justify-center gap-4 md:flex-row">
           <button
             onClick={handleMyWork}
-            className="inline-flex h-12 items-center gap-2 rounded-xl border border-white/15 px-6"
+            className="inline-flex h-12 items-center gap-2 rounded-xl border border-emerald-500/30 px-6 hover:bg-emerald-500/10 transition-colors duration-300"
           >
-            <span className="font-semibold">Explore My Work</span>
+            <span className="font-semibold">View Projects</span>
             <ArrowDown className="size-4" />
           </button>
           <button
             onClick={handleConnect}
-            className="inline-flex h-12 items-center gap-2 rounded-xl border border-white bg-white px-6 text-gray-900"
+            className="inline-flex h-12 items-center gap-2 rounded-xl bg-gradient-to-r from-emerald-500 to-cyan-500 px-6 text-gray-900 hover:from-emerald-600 hover:to-cyan-600 transition-colors duration-300"
           >
             <span>👋</span>
-            <span className="font-semibold">Let&apos;s Connect</span>
+            <span className="font-semibold">Let's Connect</span>
           </button>
         </div>
       </div>
