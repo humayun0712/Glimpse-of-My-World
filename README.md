@@ -52,7 +52,7 @@ yarn dev
 
 - LinkedIn: [linkedin.com/in/vijay1289](https://linkedin.com/in/vijay1289)
 - GitHub: [github.com/Vijay-1289](https://github.com/Vijay-1289)
-- Email: vijayraju1289@gmail.com
+- Email: vijay.siruvuru@gmail.com
 
 ## 📝 License
 
