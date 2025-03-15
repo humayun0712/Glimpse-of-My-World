@@ -16,7 +16,7 @@ const testimonials = [
     avatar: memojiAvatar1,
   },
   {
-    name: "Dr. G. Adilakshmi",
+    name: "Dr. Jannu Chaitanya",
     position: "Professor, NRI Institute of Technology",
     text: "An outstanding student who consistently demonstrates excellence in both academic and practical applications of technology.",
     avatar: memojiAvatar2,
