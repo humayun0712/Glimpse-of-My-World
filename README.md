@@ -54,10 +54,6 @@ yarn dev
 - GitHub: [github.com/Vijay-1289](https://github.com/Vijay-1289)
 - Email: vijay.siruvuru@gmail.com
 
-## 📝 License
-
-This project is open source and available under the MIT License.
-
 ---
 
 Built with ❤️ using Next.js and TailwindCSS
