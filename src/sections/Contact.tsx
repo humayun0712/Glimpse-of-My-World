@@ -26,7 +26,7 @@ export const ContactSection = () => {
     {
       name: "Instagram",
       icon: InstagramIcon,
-      url: "https://www.instagram.com/versatile_vijay_1289",
+      url: "https://www.instagram.com/urstruly_vijju",
     },
   ];
 
