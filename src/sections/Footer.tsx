@@ -12,7 +12,7 @@ const footerLinks = [
   },
   {
     title: "Instagram",
-    href: "https://www.instagram.com/versatile_vijay_1289",
+    href: "https://www.instagram.com/urstruly_vijju",
   },
   {
     title: "Email",
