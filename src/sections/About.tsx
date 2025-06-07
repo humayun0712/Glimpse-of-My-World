@@ -115,7 +115,7 @@ export const AboutSection = () => {
           <div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3">
             <Card className="h-[320px] md:col-span-2 lg:col-span-1">
               <CardHeader
-                title="Current Focus"
+                title="Noodling on"
                 description="Exploring the intersection of AI and Data Science"
               />
               <div className="flex flex-col items-center justify-center p-6 text-center">
