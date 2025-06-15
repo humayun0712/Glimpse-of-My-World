@@ -9,7 +9,7 @@ import gamingWebsiteImage from "@/assets/images/Gaming.png";
 import searchEngineImage from "@/assets/images/search engine.png";
 import pingPongImage from "@/assets/images/pingpong.png";
 import ticTacToeImage from "@/assets/images/Tictactoe.png";
-import quantumimage from "@assets/images/quantumwarrior.png"
+import quantumimage from "@assets/images/quantumwarrior.png";
 
 const portfolioProjects = [
   {
