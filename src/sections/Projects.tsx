@@ -70,6 +70,18 @@ const portfolioProjects = [
     ],
     link: "https://github.com/Vijay-1289/AI-Interview-Website",
     image: aiInterviewImage,
+  },
+  {
+    company: "Web Development",
+    year: "2025",
+    title: "Quantum Warrior",
+    results: [
+      { title: "A typical Story board game" },
+      { title: "Progressive games to learn Quantum Computing" },
+      { title: "Easy way to learn topics" },
+    ],
+    link: "https://github.com/Vijay-1289/quantum-warrior-quest-saga",
+    image: aiInterviewImage,
   }
 ];
 
