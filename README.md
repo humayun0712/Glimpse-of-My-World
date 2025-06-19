@@ -57,4 +57,3 @@ yarn dev
 ---
 
 Built with ❤️ using Next.js and TailwindCSS
-# Glimpse-of-My-World
