@@ -21,7 +21,7 @@ export const HeroSection = () => {
   const handleResumeDownload = () => {
     const link = document.createElement("a");
     link.href = "Resume.pdf";
-    link.download = "Vijay_Resume.pdf";
+    link.download = "My Resume.pdf";
     link.click();
   };
 
