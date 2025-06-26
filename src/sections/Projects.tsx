@@ -73,7 +73,7 @@ const portfolioProjects = [
     image: aiInterviewImage,
   },
   {
-    company: "Web Development",
+    company: "Game Development",
     year: "2025",
     title: "Quantum Warrior",
     results: [
