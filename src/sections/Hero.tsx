@@ -166,7 +166,7 @@ export const HeroSection = () => {
             Hi, I'm Vijay Rama Raju
           </h1>
           <p className="mt-4 text-center text-white/80 md:text-lg font-light">
-            Passionate Data Science Enthusiast & Python Developer. Currently pursuing B.Tech in Data Science at NRI Institute of Technology, exploring the realms of AI, ML, and prompt engineering.
+            Passionate Data Science Enthusiast & Python Developer. Currently pursuing B.Tech in Data Science at NRI Institute of Technology, exploring the realms of AI, ML, and Prompt Engineering. Also familiar with Quantum Computing
           </p>
         </div>
 
