@@ -5,6 +5,7 @@ import LinkedInIcon from "@/assets/icons/linkedin.svg";
 import GitHubIcon from "@/assets/icons/github.svg";
 import InstagramIcon from "@/assets/icons/instagram.svg";
 import grainImage from "@/assets/images/grain.jpg";
+import StarBorder from "@/components/StarBorder";
 
 export const ContactSection = () => {
   const handleEmailClick = () => {
@@ -65,13 +66,10 @@ export const ContactSection = () => {
               </div>
             </div>
             <div className="flex flex-col gap-4">
-              <button
-                onClick={handleEmailClick}
-                className="inline-flex h-12 w-max items-center gap-2 rounded-xl border border-gray-900 bg-gray-900 px-6 text-white transition-colors hover:bg-gray-800"
-              >
+              <StarBorder as="button" color="cyan" speed="5s" className="inline-flex h-12 w-max items-center gap-2 rounded-xl border border-gray-900 bg-gray-900 px-6 text-white transition-colors hover:bg-gray-800" onClick={handleEmailClick}>
                 <span className="font-semibold">Send Email</span>
                 <ArrowUpRightIcon className="size-4" />
-              </button>
+              </StarBorder>
               <div className="text-center text-sm">
                 <span className="font-medium">vijay.siruvuru@gmail.com</span>
               </div>

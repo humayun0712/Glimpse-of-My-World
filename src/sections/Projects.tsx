@@ -3,6 +3,7 @@ import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import Card from "@/components/Card";
 import SectionHeader from "@/components/SectionHeader";
 import Image from "next/image";
+import StarBorder from "@/components/StarBorder";
 
 import aiInterviewImage from "@/assets/images/AI.png";
 import gamingWebsiteImage from "@/assets/images/Gaming.png";
@@ -127,10 +128,10 @@ export const ProjectsSection = () => {
                     ))}
                   </ul>
                   <a href={project.link} target="_blank" rel="noopener noreferrer">
-                    <button className="mt-8 inline-flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-emerald-400 to-cyan-400 font-semibold text-gray-950 hover:from-emerald-500 hover:to-cyan-500 transition-colors duration-300 md:w-auto md:px-6">
+                    <StarBorder as="button" color="cyan" speed="5s" className="mt-8 inline-flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-emerald-400 to-cyan-400 font-semibold text-gray-950 hover:from-emerald-500 hover:to-cyan-500 transition-colors duration-300 md:w-auto md:px-6">
                       <span>View Project</span>
                       <ArrowUpRightIcon className="size-4" />
-                    </button>
+                    </StarBorder>
                   </a>
                 </div>
                 <div className="relative">

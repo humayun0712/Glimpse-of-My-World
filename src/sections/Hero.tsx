@@ -9,6 +9,7 @@ import grainImage from "@/assets/images/grain.jpg";
 import memojiImage from "@/assets/images/memoji-computer.png";
 import HeroOrbit from "@/components/HeroOrbit";
 import BlurText from "@/components/BlurText";
+import StarBorder from "@/components/StarBorder";
 
 export const HeroSection = () => {
   const handleConnect = () => {
@@ -184,20 +185,14 @@ export const HeroSection = () => {
         </div>
 
         <div className="mt-8 flex flex-col items-center justify-center gap-4 md:flex-row">
-          <button
-            onClick={handleMyWork}
-            className="inline-flex h-12 items-center gap-2 rounded-xl border border-emerald-500/30 px-6 hover:bg-emerald-500/10 transition-colors duration-300"
-          >
+          <StarBorder as="button" color="cyan" speed="5s" className="inline-flex h-12 items-center gap-2 rounded-xl border border-emerald-500/30 px-6 hover:bg-emerald-500/10 transition-colors duration-300">
             <span className="font-semibold">View Projects</span>
             <ArrowDown className="size-4" />
-          </button>
-          <button
-            onClick={handleConnect}
-            className="inline-flex h-12 items-center gap-2 rounded-xl bg-gradient-to-r from-emerald-500 to-cyan-500 px-6 text-gray-900 hover:from-emerald-600 hover:to-cyan-600 transition-colors duration-300"
-          >
+          </StarBorder>
+          <StarBorder as="button" color="cyan" speed="5s" className="inline-flex h-12 items-center gap-2 rounded-xl bg-gradient-to-r from-emerald-500 to-cyan-500 px-6 text-gray-900 hover:from-emerald-600 hover:to-cyan-600 transition-colors duration-300">
             <span>👋</span>
             <span className="font-semibold">Let's Connect</span>
-          </button>
+          </StarBorder>
         </div>
       </div>
     </section>
