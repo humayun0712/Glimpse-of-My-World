@@ -1,3 +1,5 @@
+"use client";
+
 import { ElementType, ReactNode } from "react";
 import { twMerge } from "tailwind-merge";
 
