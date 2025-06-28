@@ -175,7 +175,7 @@ export const HeroSection = () => {
               animateBy="words"
               direction="top"
               onAnimationComplete={handleAnimationComplete}
-              className="text-4xl md:text-6xl bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent"
+              className="text-4xl md:text-6xl"
             />
           </h1>
           <p className="mt-4 text-center text-white/80 md:text-lg font-light">
