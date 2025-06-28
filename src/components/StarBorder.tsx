@@ -11,17 +11,11 @@ type StarBorderProps<T extends ElementType = "button"> = {
   children: ReactNode;
 } & ComponentPropsWithoutRef<T>;
 
-const StarSVG = ({ color = "cyan" }: { color?: string }) => (
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="star-svg">
-    <polygon points="12 2 15 8.5 22 9.3 17 14.1 18.2 21 12 17.8 5.8 21 7 14.1 2 9.3 9 8.5 12 2" fill={color} />
-  </svg>
-);
-
 const StarBorder = <T extends ElementType = "button">({
   as,
   className = "",
-  color = "cyan",
-  speed = "5s",
+  color = "#06b6d4", // default cyan
+  speed = "2s",
   children,
   ...rest
 }: StarBorderProps<T>) => {
@@ -31,48 +25,30 @@ const StarBorder = <T extends ElementType = "button">({
       <Component className={twMerge("relative z-10 w-full h-full px-6 py-2 bg-transparent border-none outline-none", className)} {...rest}>
         {children}
       </Component>
-      {/* Animated Border */}
+      {/* 3D Animated Gradient Border */}
       <span
-        className="pointer-events-none absolute inset-0 z-0 rounded-xl border-2"
+        className="pointer-events-none absolute inset-0 z-0 rounded-xl border-2 border-transparent group-hover:border-transparent before:absolute before:inset-0 before:rounded-xl before:border-2 before:border-transparent before:bg-gradient-to-r before:from-emerald-400 before:via-cyan-400 before:to-emerald-400 before:blur-sm before:opacity-80 before:transition-opacity before:duration-300 before:content-[''] before:z-[-1] before:animate-border-shine"
         style={{
-          borderColor: color,
           boxShadow: `0 0 12px 2px ${color}55`,
+          animationDuration: speed,
         }}
       ></span>
-      {/* Animated Star */}
-      <span
-        className="pointer-events-none absolute z-20"
-        style={{
-          animation: `star-orbit ${speed} linear infinite`,
-        }}
-      >
-        <StarSVG color={color} />
-      </span>
       <style jsx>{`
-        @keyframes star-orbit {
+        @keyframes border-shine {
           0% {
-            top: 0; left: 0;
-            transform: translate(0, 0) rotate(0deg);
-          }
-          25% {
-            top: 0; left: 100%;
-            transform: translate(-100%, 0) rotate(90deg);
-          }
-          50% {
-            top: 100%; left: 100%;
-            transform: translate(-100%, -100%) rotate(180deg);
-          }
-          75% {
-            top: 100%; left: 0;
-            transform: translate(0, -100%) rotate(270deg);
+            background-position: 0% 50%;
           }
           100% {
-            top: 0; left: 0;
-            transform: translate(0, 0) rotate(360deg);
+            background-position: 100% 50%;
           }
         }
-        .star-svg {
-          filter: drop-shadow(0 0 6px ${color});
+        .group:hover .before\:animate-border-shine::before {
+          opacity: 1;
+        }
+        .before\:animate-border-shine::before {
+          background-size: 200% 200%;
+          animation: border-shine ${speed} linear infinite;
+          opacity: 0.8;
         }
       `}</style>
     </span>
