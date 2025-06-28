@@ -8,6 +8,7 @@ import StarIcon from "@/assets/icons/star.svg";
 import grainImage from "@/assets/images/grain.jpg";
 import memojiImage from "@/assets/images/memoji-computer.png";
 import HeroOrbit from "@/components/HeroOrbit";
+import BlurText from "@/components/BlurText";
 
 export const HeroSection = () => {
   const handleConnect = () => {
@@ -23,6 +24,10 @@ export const HeroSection = () => {
     link.href = "My Resume.pdf";
     link.download = "My_Resume.pdf";
     link.click();
+  };
+
+  const handleAnimationComplete = () => {
+    console.log('Name animation completed!');
   };
 
   return (
@@ -163,7 +168,15 @@ export const HeroSection = () => {
 
         <div className="mx-auto max-w-2xl">
           <h1 className="mt-8 gap-4 text-center font-serif text-4xl md:text-6xl bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent">
-            Hi, I'm Vijay Rama Raju
+            Hi, I'm{" "}
+            <BlurText
+              text="Vijay Rama Raju"
+              delay={150}
+              animateBy="words"
+              direction="top"
+              onAnimationComplete={handleAnimationComplete}
+              className="text-4xl md:text-6xl bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent"
+            />
           </h1>
           <p className="mt-4 text-center text-white/80 md:text-lg font-light">
             Passionate Data Science Enthusiast & Python Developer. Currently pursuing B.Tech in Data Science at NRI Institute of Technology, exploring the realms of AI, ML, and Prompt Engineering. Also familiar with Quantum Computing
