@@ -1,15 +1,15 @@
 "use client";
 
-import { ElementType, ReactNode } from "react";
+import { ElementType, ReactNode, ComponentPropsWithoutRef } from "react";
 import { twMerge } from "tailwind-merge";
 
-interface StarBorderProps {
-  as?: ElementType;
+type StarBorderProps<T extends ElementType = "button"> = {
+  as?: T;
   className?: string;
   color?: string;
   speed?: string;
   children: ReactNode;
-}
+} & ComponentPropsWithoutRef<T>;
 
 const StarSVG = ({ color = "cyan" }: { color?: string }) => (
   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="star-svg">
@@ -17,16 +17,18 @@ const StarSVG = ({ color = "cyan" }: { color?: string }) => (
   </svg>
 );
 
-const StarBorder = ({
-  as: Component = "button",
+const StarBorder = <T extends ElementType = "button">({
+  as,
   className = "",
   color = "cyan",
   speed = "5s",
   children,
-}: StarBorderProps) => {
+  ...rest
+}: StarBorderProps<T>) => {
+  const Component = as || "button";
   return (
     <span className={twMerge("relative inline-block group", className)}>
-      <Component className={twMerge("relative z-10 w-full h-full px-6 py-2 bg-transparent border-none outline-none", className)}>
+      <Component className={twMerge("relative z-10 w-full h-full px-6 py-2 bg-transparent border-none outline-none", className)} {...rest}>
         {children}
       </Component>
       {/* Animated Border */}
