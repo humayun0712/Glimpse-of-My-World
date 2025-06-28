@@ -10,6 +10,8 @@ type BlurTextProps = {
   className?: string;
 };
 
+const gradientTextClasses = "bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent";
+
 const BlurText = ({
   text,
   delay = 0,
@@ -83,6 +85,7 @@ const BlurText = ({
         <span
           key={index}
           className={twMerge(
+            gradientTextClasses,
             "inline-block transition-all duration-700 ease-out",
             animatedItems[index] 
               ? getAnimatedClasses()
