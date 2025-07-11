@@ -22,7 +22,7 @@ export const HeroSection = () => {
 
   const handleResumeDownload = () => {
     const link = document.createElement("a");
-    link.href = "Humayun Resume.pdf";
+    link.href = "Humayun's Resume.pdf";
     link.download = "Humayun's Resume .pdf";
     link.click();
   };
