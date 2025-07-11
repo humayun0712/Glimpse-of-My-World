@@ -1,4 +1,4 @@
-# Vijay Rama Raju - Data Science Portfolio
+# Shaik Humayun Basha - Data Science Portfolio
 
 Welcome to my portfolio website! This site showcases my journey in Data Science, Python development, and my passion for creating impactful solutions through data analysis and machine learning.
 
@@ -20,7 +20,7 @@ Welcome to my portfolio website! This site showcases my journey in Data Science,
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/Vijay-1289/portfolio.git
+git clone https://github.com/humayun0712/portfolio.git
 cd portfolio
 ```
 
@@ -50,9 +50,9 @@ yarn dev
 
 ## 📫 Contact
 
-- LinkedIn: [linkedin.com/in/vijay1289](https://linkedin.com/in/vijay1289)
-- GitHub: [github.com/Vijay-1289](https://github.com/Vijay-1289)
-- Email: vijay.siruvuru@gmail.com
+- LinkedIn: [linkedin.com/in/shaik-humayun-basha-034b78317](https://linkedin.com/in/shaik-humayun-basha-034b78317)
+- GitHub: [github.com/humayun0712](https://github.com/humayun0712)
+- Email: shaikhumayun795@gamil.com
 
 ---
 

@@ -21,7 +21,7 @@ const portfolioProjects = [
       { title: "Classic arcade-style gameplay" },
       { title: "Smooth animations and controls" },
     ],
-    link: "https://github.com/Vijay-1289/Ping-Pong-Game-using-pygame",
+    link: "https://github.com/humayun0712/Ping-Pong-Game-using-pygame",
     image: pingPongImage,
   },
   {
@@ -33,7 +33,7 @@ const portfolioProjects = [
       { title: "Clean and intuitive UI with HTML" },
       { title: "Fast and efficient search results" },
     ],
-    link: "https://github.com/Vijay-1289/Search-Engine",
+    link: "https://github.com/humayun0712/Search-Engine",
     image: searchEngineImage,
   },
   {
@@ -45,7 +45,7 @@ const portfolioProjects = [
       { title: "Modern UI/UX design" },
       { title: "Multiplayer functionality" },
     ],
-    link: "https://github.com/Vijay-1289/TIC-TAC-TOE",
+    link: "https://github.com/humayun0712/TIC-TAC-TOE",
     image: ticTacToeImage,
   },
   {
@@ -57,7 +57,7 @@ const portfolioProjects = [
       { title: "Dynamic content loading" },
       { title: "Responsive design for all devices" },
     ],
-    link: "https://github.com/Vijay-1289/Gaming-Website",
+    link: "https://github.com/humayun0712/Gaming-Website",
     image: gamingWebsiteImage,
   },
   {
@@ -69,7 +69,7 @@ const portfolioProjects = [
       { title: "AI-powered interview simulations" },
       { title: "Real-time feedback system" },
     ],
-    link: "https://github.com/Vijay-1289/AI-Interview-Website",
+    link: "https://github.com/humayun0712/AI-Interview-Website",
     image: aiInterviewImage,
   },
   {
@@ -81,7 +81,7 @@ const portfolioProjects = [
       { title: "Progressive games to learn Quantum Computing" },
       { title: "Easy way to learn topics" },
     ],
-    link: "https://github.com/Vijay-1289/quantum-warrior-quest-saga",
+    link: "https://github.com/humayun0712/quantum-warrior-quest-saga",
     image: quantumImage,
   }
 ];

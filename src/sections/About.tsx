@@ -116,12 +116,8 @@ export const AboutSection = () => {
             <Card className="h-[320px] md:col-span-2 lg:col-span-1">
               <CardHeader
                 title="Noodling on"
-                description="Exploring the intersection of AI and Data Science"
+                description="Passionate AI Innovator & Full-Stack Developer. Currently pursuing B.Tech in Data Science at NRI Institute of Technology. Building advanced solutions in Smart City Traffic Management, AI-powered Surveillance, and Prompt Engineering. Skilled in Web Development, ML, and System Integration."
               />
-              <div className="flex flex-col items-center justify-center p-6 text-center">
-                <p className="text-emerald-400 font-medium mb-4">Quantum Computing and Image Processing Intern</p>
-                <p className="text-white/80">NIT Warangal</p>
-              </div>
             </Card>
             <Card className="h-[320px] md:col-span-3 lg:col-span-2">
               <CardHeader
@@ -174,7 +170,7 @@ export const AboutSection = () => {
               />
               <div className="flex flex-col gap-4 p-6">
                 <a
-                  href="https://linkedin.com/in/vijay1289"
+                  href="https://linkedin.com/in/shaik-humayun-basha-034b78317"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 rounded-lg border border-emerald-500/30 p-3 hover:bg-emerald-500/10 transition-colors duration-300"
@@ -183,7 +179,7 @@ export const AboutSection = () => {
                   <span className="text-white/80">LinkedIn</span>
                 </a>
                 <a
-                  href="https://github.com/Vijay-1289"
+                  href="https://github.com/humayun0712"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 rounded-lg border border-emerald-500/30 p-3 hover:bg-emerald-500/10 transition-colors duration-300"

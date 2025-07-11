@@ -10,24 +10,24 @@ import StarBorder from "@/components/StarBorder";
 export const ContactSection = () => {
   const handleEmailClick = () => {
     window.location.href =
-      "mailto:vijay.siruvuru@gmail.com?subject=Contact Request";
+      "mailto:shaikhumayun795@gamil.com?subject=Contact Request";
   };
 
   const socialLinks = [
     {
       name: "LinkedIn",
       icon: LinkedInIcon,
-      url: "https://www.linkedin.com/in/vijay1289",
+      url: "https://www.linkedin.com/in/shaik-humayun-basha-034b78317",
     },
     {
       name: "GitHub",
       icon: GitHubIcon,
-      url: "https://github.com/Vijay-1289",
+      url: "https://github.com/humayun0712",
     },
     {
       name: "Instagram",
       icon: InstagramIcon,
-      url: "https://www.instagram.com/urstruly_vijju",
+      url: "https://www.instagram.com/____humayun___/",
     },
   ];
 
@@ -71,7 +71,7 @@ export const ContactSection = () => {
                 <ArrowUpRightIcon className="size-4" />
               </StarBorder>
               <div className="text-center text-sm">
-                <span className="font-medium">vijay.siruvuru@gmail.com</span>
+                <span className="font-medium">shaikhumayun795@gamil.com</span>
               </div>
             </div>
           </div>

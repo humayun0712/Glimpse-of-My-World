@@ -14,7 +14,7 @@ import StarBorder from "@/components/StarBorder";
 export const HeroSection = () => {
   const handleConnect = () => {
     window.location.href =
-      "mailto:vijayraju1289@gmail.com?subject=Contact Request";
+      "mailto:shaikhumayun795@gamil.com?subject=Contact Request";
   };
   const handleMyWork = () => {
     window.location.href = "#project";
@@ -22,8 +22,8 @@ export const HeroSection = () => {
 
   const handleResumeDownload = () => {
     const link = document.createElement("a");
-    link.href = "Vijay Resume.pdf";
-    link.download = "My_Resume.pdf";
+    link.href = "Humayun Resume.pdf";
+    link.download = "Humayun's Resume .pdf";
     link.click();
   };
 
@@ -152,7 +152,7 @@ export const HeroSection = () => {
             onClick={handleResumeDownload}
             className="group size-24 hover:cursor-pointer hover:scale-110 transition-transform duration-300"
             src={memojiImage}
-            alt="Vijay's Avatar"
+            alt="Shaik Humayun Basha's Avatar"
           />
 
           <span className="absolute top-2 ml-12 hidden translate-x-1/2 transform rounded-3xl rounded-bl-none bg-black/80 px-2 py-1 text-xs font-medium text-emerald-400 group-hover:block backdrop-blur-sm border border-emerald-500/20">
@@ -171,7 +171,7 @@ export const HeroSection = () => {
           <h1 className="mt-8 gap-4 text-center font-serif text-4xl md:text-6xl bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent">
             Hi, I'm{" "}
             <BlurText
-              text="Vijay Rama Raju"
+              text="Shaik Humayun Basha"
               delay={150}
               animateBy="words"
               direction="top"
@@ -180,7 +180,7 @@ export const HeroSection = () => {
             />
           </h1>
           <p className="mt-4 text-center text-white/80 md:text-lg font-light">
-            Passionate Data Science Enthusiast & Python Developer. Currently pursuing B.Tech in Data Science at NRI Institute of Technology, exploring the realms of AI, ML, and Prompt Engineering. Also familiar with Quantum Computing
+            Passionate AI Innovator & Full-Stack Developer. Currently pursuing B.Tech in Data Science at NRI Institute of Technology. Building advanced solutions in Smart City Traffic Management, AI-powered Surveillance, and Prompt Engineering. Skilled in Web Development, ML, and System Integration.
           </p>
         </div>
 

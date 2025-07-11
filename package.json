@@ -1,12 +1,12 @@
 {
-  "name": "vijay-portfolio",
+  "name": "humayun-portfolio",
   "version": "1.0.0",
   "private": true,
-  "description": "Vijay Rama Raju's Data Science and Python Development Portfolio",
+  "description": "Shaik Humayun Basha's Data Science and Python Development Portfolio",
   "author": {
-    "name": "Vijay Rama Raju",
-    "email": "vijayraju1289@gmail.com",
-    "url": "https://github.com/Vijay-1289"
+    "name": "Shaik Humayun Basha",
+    "email": "shaikhumayun795@gamil.com",
+    "url": "https://github.com/humayun0712"
   },
   "scripts": {
     "dev": "next dev",

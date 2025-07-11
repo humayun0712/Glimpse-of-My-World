@@ -5,19 +5,19 @@ import { Calistoga, Inter } from "next/font/google";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "A Glimpse Into Vijay's World",
+  title: "A Glimpse Into Shaik Humayun Basha's World",
   description:
     "Data Science enthusiast and Python developer. B.Tech Data Science student at NRI Institute of Technology, exploring AI, ML, and data analytics.",
-  keywords: ["Data Science", "Python", "Machine Learning", "Data Analysis", "Portfolio", "Vijay Rama Raju"],
-  authors: [{ name: "Vijay Rama Raju" }],
+  keywords: ["Data Science", "Python", "Machine Learning", "Data Analysis", "Portfolio", "Shaik Humayun Basha"],
+  authors: [{ name: "Shaik Humayun Basha" }],
   icons: {
     icon: '/favicon.ico'
   },
   openGraph: {
-    title: "A Glimpse Into Vijay's World",
+    title: "A Glimpse Into Shaik Humayun Basha's World",
     description: "Data Science enthusiast and Python developer, exploring AI, ML, and data analytics.",
     url: "https://vijay-portfolio.vercel.app",
-    siteName: "Vijay's Portfolio",
+    siteName: "Shaik Humayun Basha's Portfolio",
     locale: "en_US",
     type: "website",
   },

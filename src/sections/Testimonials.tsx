@@ -24,19 +24,19 @@ const testimonials = [
   {
     name: "Tanooj Puppala",
     position: "Partner In Crime",
-    text: "Working with Vijay has been a great experience. His attention to detail and technical expertise are truly impressive.",
+    text: "Working with Humayun has been a great experience. His attention to detail and technical expertise are truly impressive.",
     avatar: memojiAvatar3,
   },
   {
     name: "Madhusudhan Rao",
     position: "Dev Companion",
-    text: "Vijay's ability to grasp complex concepts and implement innovative solutions makes him a valuable asset to any team.",
+    text: "Humayun's ability to grasp complex concepts and implement innovative solutions makes him a valuable asset to any team.",
     avatar: memojiAvatar1,
   },
   {
     name: "R Yash Raj",
     position: "Class mate",
-    text: "Exceptional work ethic and technical skills. Vijay consistently delivers high-quality results and maintains excellent communication.",
+    text: "Exceptional work ethic and technical skills. Humayun consistently delivers high-quality results and maintains excellent communication.",
     avatar: memojiAvatar5,
   }
 ];
